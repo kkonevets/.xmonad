@@ -142,6 +142,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
    -- close focused window
    , ((modm .|. shiftMask, xK_c     ), kill)
 
+    -- Set current window fullscreen
+   , ((modm, xK_f     ), sendMessage $ Toggle NBFULL)
+
     -- Rotate through the available layout algorithms
    , ((modm,               xK_space ), sendMessage NextLayout)
 
