@@ -1,0 +1,1 @@
+setxkbmap -option "altwin:swap_alt_win,grp:caps_toggle" -layout "us,ru"
