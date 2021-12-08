@@ -65,6 +65,7 @@ myWorkspaces    = ["\61612","\61899","\61947","\61635","\61502","\61501","\61705
 --myWorkspaces    = ["I","II","III","IV","V","VI","VII","VIII","IX","X"]
 
 myBaseConfig = desktopConfig
+myTerminal = "kitty"
 
 -- window manipulations
 myManageHook = composeAll . concat $
@@ -251,4 +252,5 @@ main = do
 , normalBorderColor = normBord
 , keys = myKeys
 , mouseBindings = myMouseBindings
+, terminal = myTerminal
 }
