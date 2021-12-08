@@ -135,8 +135,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
   [((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
 
    -- launch dmenu
-   , ((modm,               xK_p     ), spawn "dmenu_run")
-
+   , ((modm,               xK_p     ), spawn $ "dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'")
    -- launch gmrun
    , ((modm .|. shiftMask, xK_p     ), spawn "gmrun")
 
